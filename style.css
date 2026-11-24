@@ -1,3 +1,7 @@
+html {
+  font-size: 12px;
+  color: darkslategrey;
+}
 /* -------------------- Presets -------------------- */
 
 /* 1. Use a more-intuitive box-sizing model */
@@ -78,10 +82,31 @@ h6 {
 
 /* -------------------- Styles -------------------- */
 
-/* Background Image */
+/* Fonts */
+@font-face {
+  font-family: "am_intex";
+  src: url("assets/fonts/transfonter-20261124-154633/am_intex.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("assets/fonts/transfonter-20261124-162630/Roboto-Regular.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
   display: flex;
+  font-family: "Roboto";
 }
+
+/* Background Image */
 
 .background-image {
   position: relative;
@@ -111,7 +136,8 @@ body {
 }
 
 .logo > p {
-  font-size: 7em;
+  font-family: "am_intex";
+  font-size: 4em;
   color: white;
 }
 
@@ -139,7 +165,7 @@ body {
 
 .message {
   padding-top: 10%;
-  font-size: 2.5rem;
+  font-size: 2.3rem;
 }
 
 .message > p + p {
@@ -156,12 +182,13 @@ body {
 }
 
 .fill-up > p {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+  font-size: 2.3rem;
+  margin-bottom: 1.5rem;
 }
 
 form {
   display: flex;
+  width: 80%;
   flex: 5;
   justify-content: space-between;
   flex-direction: column;
@@ -178,6 +205,7 @@ form > div > div {
 }
 
 label {
+  letter-spacing: 2px;
   font-size: 1.2rem;
   display: block;
 }
@@ -185,10 +213,10 @@ label {
 input {
   padding: 1rem;
   font-size: 2rem;
-  width: 80%;
+  width: 70%;
   height: 3rem;
   border: 1px solid lightgray;
-  border-radius: 10px;
+  border-radius: 7px;
 }
 
 /* Submit section  */
@@ -199,7 +227,7 @@ input {
 button {
   font-size: 1.8rem;
   padding: 0.5rem 4rem;
-  border-radius: 10px;
+  border-radius: 7px;
   border-style: none;
   box-shadow: 3px 6px 10px 0 rgba(90, 136, 113, 0.473);
   background: linear-gradient(0deg, #128321 0%, #14ad2d 80%);
