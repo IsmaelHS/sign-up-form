@@ -7,12 +7,13 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="picture-section">
-      <img src="./assets/images/halie-west-25xggax4bSA-unsplash.jpg" alt="" />
+    <div class="background-image">
+      <img src="./assets/images/_.jpeg" alt="" />
       <div class="logo">
         <img src="./assets/images/odin-lined.png" alt="" />
-        <span>ODIN</span>
+        <p>ODIN</p>
       </div>
+      <p class="credit">Photo by Roman on Pinterest</p>
     </div>
     <div class="form-section">
       <div class="message">
@@ -21,39 +22,46 @@
           this in your life to help you realize your deepest dreams. Sign up to
           get started.
         </p>
-        <p>You know you want to.</p>
+        <p>You <i>know</i> you want to.</p>
       </div>
-      <div class="fill-up-pane">
+      <div class="fill-up">
+        <p>Let's do this!</p>
         <form action="" method="post">
-          <div class="first-name">
-            <label for="first-name">FIRST NAME</label>
-            <input type="text" id="first-name" name="userFirstName" />
+          <div>
+            <div class="first-name">
+              <label for="first-name">FIRST NAME</label>
+              <input type="text" id="first-name" name="userFirstName" />
+            </div>
+            <div class="last-name">
+              <label for="last-name">LAST NAME</label>
+              <input type="text" id="last-name" name="userLastName" />
+            </div>
           </div>
-          <div class="last-name">
-            <label for="last-name">LAST NAME</label>
-            <input type="text" id="last-name" name="userLastName" />
+          <div>
+            <div class="email">
+              <label for="email">EMAIL</label>
+              <input type="text" id="email" name="userMail" />
+            </div>
+            <div class="phone">
+              <label for="phone"> PHONE NUMBER </label>
+              <input type="text" id="phone" name="userPhone" inputmode="tel" />
+            </div>
           </div>
-          <div class="email">
-            <label for="email">EMAIL</label>
-            <input type="text" id="email" name="userMail" />
-          </div>
-          <div class="phone">
-            <label for="phone"> PHONE NUMBER </label>
-            <input type="text" id="phone" name="userPhone" inputmode="tel" />
-          </div>
-          <div class="password">
-            <label for="pwd">PASSWORD</label>
-            <input type="password" id="pwd" name="password" />
-          </div>
-          <div class="password-confirm">
-            <label for="pwd-confirm"> CONFIRM PASSWORD </label>
-            <input type="password" id="pwd-confirm" name="pswConfirm" />
+          <div>
+            <div class="password">
+              <label for="pwd">PASSWORD</label>
+              <input type="password" id="pwd" name="password" />
+            </div>
+            <div class="password-confirm">
+              <label for="pwd-confirm"> CONFIRM PASSWORD </label>
+              <input type="password" id="pwd-confirm" name="pswConfirm" />
+            </div>
           </div>
         </form>
       </div>
       <div class="submit-pane">
         <button type="submit">Create Account</button>
-        <p>Already have an account? <a>Log in</a></p>
+        <p>Already have an account? <a href="">Log in</a></p>
       </div>
     </div>
   </body>
