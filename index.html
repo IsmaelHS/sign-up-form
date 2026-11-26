@@ -26,43 +26,54 @@
       </div>
       <div class="fill-up">
         <p>Let's do this!</p>
-        <form action="" method="post">
+        <form action="" method="post" id="my-form">
           <div>
-            <div class="first-name">
+            <div>
               <label for="first-name">FIRST NAME</label>
-              <input type="text" id="first-name" name="userFirstName" />
+              <input
+                type="text"
+                id="first-name"
+                name="userFirstName"
+                required
+              />
             </div>
-            <div class="last-name">
+            <div>
               <label for="last-name">LAST NAME</label>
               <input type="text" id="last-name" name="userLastName" />
             </div>
           </div>
           <div>
-            <div class="email">
+            <div>
               <label for="email">EMAIL</label>
-              <input type="text" id="email" name="userMail" />
+              <input type="text" id="email" name="userMail" required />
             </div>
-            <div class="phone">
+            <div>
               <label for="phone"> PHONE NUMBER </label>
               <input type="text" id="phone" name="userPhone" inputmode="tel" />
             </div>
           </div>
           <div>
-            <div class="password">
+            <div>
               <label for="pwd">PASSWORD</label>
-              <input type="password" id="pwd" name="password" />
+              <input type="password" id="pwd" name="password" required />
             </div>
-            <div class="password-confirm">
+            <div>
               <label for="pwd-confirm"> CONFIRM PASSWORD </label>
-              <input type="password" id="pwd-confirm" name="pswConfirm" />
+              <input
+                type="password"
+                id="pwd-confirm"
+                name="pswConfirm"
+                required
+              />
             </div>
           </div>
         </form>
       </div>
       <div class="submit-pane">
-        <button type="submit">Create Account</button>
+        <button type="submit" form="my-form">Create Account</button>
         <p>Already have an account? <a href="">Log in</a></p>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
